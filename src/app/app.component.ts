@@ -10,6 +10,7 @@ export class AppComponent {
   url = 'http://blog.miniasp.com/';
   imgurl = '/assets/images/logo.png';
   count = 0;
+  KeyWorld = '';
   constructor() {
   }
   changeTitle(altKey: boolean) {
@@ -17,11 +18,10 @@ export class AppComponent {
       this.title = 'The Will Will Web';
     }
   }
-  countKey(value: string) {
-    this.count = value.length;
-  }
-  clean(inputEl: HTMLInputElement) {
-    this.count = 0;
-    inputEl.value = '';
+  // countKey(value: string) {
+  //   this.count = value.length;
+  // }
+  clean() {
+    this.KeyWorld = '';
   }
 }
