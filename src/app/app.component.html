@@ -194,8 +194,10 @@
         <div class="widget search">
           <div class="widget-content">
             <div id="searchbox">
-              <input [(ngModel)]="KeyWorld" (keydown.escape)="clean()" type="text" placeholder="請輸入搜尋關鍵字" accesskey="s">
-              <br>關鍵字：{{KeyWorld}} 目前字數：{{KeyWorld.length}}<br>
+              <input #tKeyWorld [(ngModel)]="KeyWorld" (keydown.escape)="clean()" type="text" placeholder="請輸入搜尋關鍵字"
+                accesskey="s">
+              <div>關鍵字：{{KeyWorld}} 目前字數：{{KeyWorld.length}}</div>
+              <div>tKeyWorld目前字數：{{tKeyWorld.value.length}}</div>
               <input type="button" value="搜尋" id="searchbutton">
             </div>
           </div>
