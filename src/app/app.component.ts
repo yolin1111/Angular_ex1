@@ -6,18 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-  url = 'http://blog.miniasp.com/';
-  imgurl = '/assets/images/logo.png';
+
   count = 0;
   KeyWorld = '';
   constructor() {
   }
-  changeTitle(altKey: boolean) {
-    if (altKey) {
-      this.title = 'The Will Will Web';
-    }
-  }
+
   // countKey(value: string) {
   //   this.count = value.length;
   // }
